@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "//memx86.github.io/react-practice/static/css/main.0ce29b70.css",
-    "main.js": "//memx86.github.io/react-practice/static/js/main.b1291b96.js",
-    "static/media/solid_academic-cap.svg": "//memx86.github.io/react-practice/static/media/solid_academic-cap.ce83b786b3721d8b979b3f617d0c3481.svg",
-    "static/media/solid_user-circle.svg": "//memx86.github.io/react-practice/static/media/solid_user-circle.025ac78724f256cf15f107ec81d042f7.svg",
-    "static/media/solid_book-open.svg": "//memx86.github.io/react-practice/static/media/solid_book-open.160ce0ffe9f65f3f1811895de9e8090f.svg",
-    "index.html": "//memx86.github.io/react-practice/index.html",
-    "main.0ce29b70.css.map": "//memx86.github.io/react-practice/static/css/main.0ce29b70.css.map",
-    "main.b1291b96.js.map": "//memx86.github.io/react-practice/static/js/main.b1291b96.js.map"
+    "main.css": "/react-practice/static/css/main.0ce29b70.css",
+    "main.js": "/react-practice/static/js/main.0f0a4a4f.js",
+    "static/media/solid_academic-cap.svg": "/react-practice/static/media/solid_academic-cap.ce83b786b3721d8b979b3f617d0c3481.svg",
+    "static/media/solid_user-circle.svg": "/react-practice/static/media/solid_user-circle.025ac78724f256cf15f107ec81d042f7.svg",
+    "static/media/solid_book-open.svg": "/react-practice/static/media/solid_book-open.160ce0ffe9f65f3f1811895de9e8090f.svg",
+    "index.html": "/react-practice/index.html",
+    "main.0ce29b70.css.map": "/react-practice/static/css/main.0ce29b70.css.map",
+    "main.0f0a4a4f.js.map": "/react-practice/static/js/main.0f0a4a4f.js.map"
   },
   "entrypoints": [
     "static/css/main.0ce29b70.css",
-    "static/js/main.b1291b96.js"
+    "static/js/main.0f0a4a4f.js"
   ]
 }
