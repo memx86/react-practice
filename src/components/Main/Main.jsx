@@ -1,11 +1,11 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import s from "./Main.module.css";
+// import { ReactComponent as Youtube } from "images/youtube.svg";
 
-function Main(props) {
-  return <div className={s.container}>Main</div>;
+function Main() {
+  return (
+    <main className={s.container}>{/* <Youtube className={s.svg} /> */}</main>
+  );
 }
-
-// Main.propTypes = {};
 
 export default Main;

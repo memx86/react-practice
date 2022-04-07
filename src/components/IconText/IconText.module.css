@@ -1,11 +1,23 @@
+@value accent-cl from "var.module.css";
 .item {
   display: flex;
-  gap: 10px;
+  gap: 24px;
   align-items: center;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+.item:hover,
+.item:focus {
+  color: accent-cl;
 }
 .img {
   border-radius: 50%;
 }
 .capslock {
+  font-size: 14px;
+  line-height: 1.71;
   text-transform: uppercase;
 }
