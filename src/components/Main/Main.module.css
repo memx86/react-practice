@@ -2,9 +2,18 @@
 
 .container {
   min-height: 100vh;
+  padding: 28px 32px 32px 32px;
   flex-grow: 1;
-  color: blue;
   background-color: bgc;
+}
+.wrapper {
+  display: flex;
+  gap: 32px;
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 .svg {
   color: #f00;

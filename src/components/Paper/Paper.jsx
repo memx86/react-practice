@@ -1,10 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import s from "./Paper.module.css";
 
-function Paper(props) {
-  return <div>Paper</div>;
+function Paper({ children, width }) {
+  return (
+    <div className={s.paper} style={{ width }}>
+      {children}
+    </div>
+  );
 }
 
-Paper.propTypes = {};
+Paper.propTypes = {
+  children: PropTypes.node.isRequired,
+  width: PropTypes.string.isRequired,
+};
 
 export default Paper;

@@ -1,0 +1,35 @@
+@value accent-cl from "var.module.css";
+.card {
+  text-align: center;
+}
+.img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 6px;
+}
+.text {
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #757575;
+}
+.title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: #424242;
+}
+.iconContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #757575;
+  transition: color 250ms linear;
+}
+.icon:hover {
+  color: accent-cl;
+}
