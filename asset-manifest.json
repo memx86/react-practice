@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/react-practice/static/css/main.2aae2f75.css",
-    "main.js": "/react-practice/static/js/main.4dfb94a0.js",
+    "main.css": "/react-practice/static/css/main.8d254c67.css",
+    "main.js": "/react-practice/static/js/main.58a2d0cd.js",
     "static/media/solid_academic-cap.svg": "/react-practice/static/media/solid_academic-cap.ce83b786b3721d8b979b3f617d0c3481.svg",
     "static/media/solid_user-circle.svg": "/react-practice/static/media/solid_user-circle.025ac78724f256cf15f107ec81d042f7.svg",
+    "static/media/location-marker.svg": "/react-practice/static/media/location-marker.ba70058830d310cddfa8ba0ff7c3e96b.svg",
+    "static/media/device-mobile.svg": "/react-practice/static/media/device-mobile.8277ec808d80f37c6bb366b9744bf12e.svg",
     "static/media/solid_book-open.svg": "/react-practice/static/media/solid_book-open.160ce0ffe9f65f3f1811895de9e8090f.svg",
+    "static/media/mail.svg": "/react-practice/static/media/mail.f1340bed32c208dfd82a9dc2e6402c8a.svg",
     "index.html": "/react-practice/index.html",
-    "main.2aae2f75.css.map": "/react-practice/static/css/main.2aae2f75.css.map",
-    "main.4dfb94a0.js.map": "/react-practice/static/js/main.4dfb94a0.js.map"
+    "main.8d254c67.css.map": "/react-practice/static/css/main.8d254c67.css.map",
+    "main.58a2d0cd.js.map": "/react-practice/static/js/main.58a2d0cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.2aae2f75.css",
-    "static/js/main.4dfb94a0.js"
+    "static/css/main.8d254c67.css",
+    "static/js/main.58a2d0cd.js"
   ]
 }
