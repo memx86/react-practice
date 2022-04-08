@@ -13,16 +13,7 @@ function IconButton({ type = "button", icon = ICON.LEFT, onClick = () => {} }) {
       onClick={onClick}
       className={`${s.button} ${s.absolute}`}
     >
-      {icon === ICON.LEFT && (
-        <BiChevronLeft
-          className={s.icon}
-          style={{
-            width: "32",
-            height: "32",
-            color: "#fff",
-          }}
-        />
-      )}
+      {icon === ICON.LEFT && <BiChevronLeft className={s.icon} />}
     </button>
   );
 }

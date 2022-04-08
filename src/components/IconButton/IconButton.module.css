@@ -6,15 +6,32 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 50%;
   background-color: accent-cl;
   cursor: pointer;
   overflow: hidden;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear;
 }
 .absolute {
   position: absolute;
   right: 0;
   transform: translateX(50%);
   z-index: 10;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  transition: color 250ms linear;
+}
+.button:hover,
+.button:focus {
+  border-color: accent-cl;
+  background-color: #fff;
+}
+.button:hover .icon,
+.button:focus .icon {
+  color: accent-cl;
 }
