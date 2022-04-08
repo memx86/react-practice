@@ -25,8 +25,9 @@ function Card({ img, text, title }) {
 }
 
 Card.propTypes = {
-  children: PropTypes.node.isRequired,
-  width: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Card;
