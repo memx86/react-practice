@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-practice/static/css/main.0ce29b70.css",
-    "main.js": "/react-practice/static/js/main.0f0a4a4f.js",
+    "main.css": "/react-practice/static/css/main.9c10e4ca.css",
+    "main.js": "/react-practice/static/js/main.c39ee724.js",
     "static/media/solid_academic-cap.svg": "/react-practice/static/media/solid_academic-cap.ce83b786b3721d8b979b3f617d0c3481.svg",
     "static/media/solid_user-circle.svg": "/react-practice/static/media/solid_user-circle.025ac78724f256cf15f107ec81d042f7.svg",
     "static/media/solid_book-open.svg": "/react-practice/static/media/solid_book-open.160ce0ffe9f65f3f1811895de9e8090f.svg",
     "index.html": "/react-practice/index.html",
-    "main.0ce29b70.css.map": "/react-practice/static/css/main.0ce29b70.css.map",
-    "main.0f0a4a4f.js.map": "/react-practice/static/js/main.0f0a4a4f.js.map"
+    "main.9c10e4ca.css.map": "/react-practice/static/css/main.9c10e4ca.css.map",
+    "main.c39ee724.js.map": "/react-practice/static/js/main.c39ee724.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ce29b70.css",
-    "static/js/main.0f0a4a4f.js"
+    "static/css/main.9c10e4ca.css",
+    "static/js/main.c39ee724.js"
   ]
 }
