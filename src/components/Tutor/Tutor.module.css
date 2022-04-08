@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  gap: 48px;
+}
+.name {
+  width: 172px;
+}
+.contacts {
+  display: grid;
+  gap: 8px;
+}

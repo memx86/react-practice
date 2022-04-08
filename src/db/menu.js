@@ -1,5 +1,5 @@
-import bookOpen from "images/solid_book-open.svg";
-import academicCap from "images/solid_academic-cap.svg";
+import bookOpen from "images/icons/solid_book-open.svg";
+import academicCap from "images/icons/solid_academic-cap.svg";
 const menu = [
   {
     id: "1",

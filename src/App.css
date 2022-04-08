@@ -22,5 +22,5 @@ p {
 .app {
   min-height: 100vh;
   display: flex;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
