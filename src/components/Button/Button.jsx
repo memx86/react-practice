@@ -6,7 +6,7 @@ const ICON = {
   PLUS: "plus",
 };
 
-function Button({ icon, text, type = "button", onClick }) {
+function Button({ icon, text, type = "button", onClick = () => {} }) {
   return (
     <button type={type} onClick={onClick} className={s.btn}>
       {icon === ICON.PLUS && <HiPlusCircle className={s.icon} />}
@@ -18,6 +18,6 @@ Button.propTypes = {
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
   type: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };
 export default Button;

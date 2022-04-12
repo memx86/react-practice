@@ -3,9 +3,10 @@
   gap: 48px;
 }
 .name {
-  max-width: 172px;
+  min-width: 172px;
 }
 .contacts {
+  min-width: 180px;
   display: grid;
   gap: 8px;
 }

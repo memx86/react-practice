@@ -2,16 +2,22 @@ import { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import Tutor from "components/Tutor";
 import Button from "components/Button";
+import Form from "components/Form";
+import tutorForm from "db/tutorForm";
 import s from "./TutorsList.module.css";
+import Paper from "components/Paper";
 
 class TutorsList extends Component {
   state = {
     tutors: this.props.tutors,
     isShown: false,
   };
-  handleClick = () => {
+  handleIsShown = () => {
     // this.setState((state) => ({ ...state, isShown: !state.isShown }));
     this.setState((state) => ({ isShown: !state.isShown }));
+  };
+  addTutor = (tutor) => {
+    this.setState(({ tutors }) => ({ tutors: [...tutors, tutor] }));
   };
 
   render() {
@@ -25,12 +31,22 @@ class TutorsList extends Component {
             </li>
           ))}
         </ul>
+        {isShown && (
+          <Fragment>
+            <Paper>
+              <Form
+                fields={tutorForm}
+                add="Пригласить"
+                handleSubmit={this.addTutor}
+              />
+            </Paper>
+          </Fragment>
+        )}
         <Button
           icon="plus"
           text="Добавить преподавателя"
-          onClick={this.handleClick}
+          onClick={this.handleIsShown}
         />
-        {isShown && <div>I am hidden!</div>}
       </Fragment>
     );
   }
