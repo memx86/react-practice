@@ -6,9 +6,15 @@ const ICON = {
   PLUS: "plus",
 };
 
-function Button({ icon, text, type = "button", onClick = () => {} }) {
+function Button({
+  icon,
+  text,
+  type = "button",
+  onClick = () => {},
+  disabled = false,
+}) {
   return (
-    <button type={type} onClick={onClick} className={s.btn}>
+    <button type={type} onClick={onClick} className={s.btn} disabled={disabled}>
       {icon === ICON.PLUS && <HiPlusCircle className={s.icon} />}
       {text}
     </button>

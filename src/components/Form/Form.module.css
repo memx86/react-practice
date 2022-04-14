@@ -18,7 +18,7 @@
   left: 16px;
   transition: transform 250ms linear;
 }
-.input:not(:placeholder-shown),
+.input:not(:placeholder-shown) + .text,
 .input:focus + .text {
   transform: translateY(-150%);
 }

@@ -36,9 +36,12 @@ class Form extends Component {
     this.props.handleSubmit({ ...this.state, options: "Some options" });
     this.setState({ ...this.initialState });
   };
+  canSubmit = () => {
+    return Object.values(this.state).every((item) => !!item);
+  };
 
   render() {
-    const { props, state, onSubmit, onChange } = this;
+    const { props, state, onSubmit, onChange, canSubmit } = this;
     const { fields, add } = props;
     return (
       <form className={s.form} onSubmit={onSubmit}>
@@ -68,7 +71,7 @@ class Form extends Component {
             </label>
           );
         })}
-        <Button text={add} type="submit" />
+        <Button text={add} type="submit" disabled={!canSubmit()} />
       </form>
     );
   }
