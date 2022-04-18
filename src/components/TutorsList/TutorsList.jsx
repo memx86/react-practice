@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react";
+import { Fragment, useState } from "react";
 import PropTypes from "prop-types";
 import Tutor from "components/Tutor";
 import Button from "components/Button";
@@ -7,49 +7,40 @@ import tutorForm from "db/tutorForm";
 import s from "./TutorsList.module.css";
 import Paper from "components/Paper";
 
-class TutorsList extends Component {
-  state = {
-    tutors: this.props.tutors,
-    isShown: false,
+function TutorsList(props) {
+  const [tutors, setTutors] = useState(props.tutors);
+  const [isShown, setIsShown] = useState(false);
+
+  const handleIsShown = () => {
+    setIsShown((prevIsShown) => !prevIsShown);
   };
-  handleIsShown = () => {
-    // this.setState((state) => ({ ...state, isShown: !state.isShown }));
-    this.setState((state) => ({ isShown: !state.isShown }));
-  };
-  addTutor = (tutor) => {
-    this.setState(({ tutors }) => ({ tutors: [...tutors, tutor] }));
+  const addTutor = (tutor) => {
+    setTutors((tutors) => [...tutors, tutor]);
   };
 
-  render() {
-    const { tutors, isShown } = this.state;
-    return (
-      <Fragment>
-        <ul className={s.list}>
-          {tutors.map((tutor) => (
-            <li key={tutor.email} className={s.item}>
-              <Tutor tutor={tutor} />
-            </li>
-          ))}
-        </ul>
-        {isShown && (
-          <Fragment>
-            <Paper>
-              <Form
-                fields={tutorForm}
-                add="Пригласить"
-                handleSubmit={this.addTutor}
-              />
-            </Paper>
-          </Fragment>
-        )}
-        <Button
-          icon="plus"
-          text="Добавить преподавателя"
-          onClick={this.handleIsShown}
-        />
-      </Fragment>
-    );
-  }
+  return (
+    <Fragment>
+      <ul className={s.list}>
+        {tutors.map((tutor) => (
+          <li key={tutor.email} className={s.item}>
+            <Tutor tutor={tutor} />
+          </li>
+        ))}
+      </ul>
+      {isShown && (
+        <Fragment>
+          <Paper>
+            <Form fields={tutorForm} add="Пригласить" handleSubmit={addTutor} />
+          </Paper>
+        </Fragment>
+      )}
+      <Button
+        icon="plus"
+        text="Добавить преподавателя"
+        onClick={handleIsShown}
+      />
+    </Fragment>
+  );
 }
 
 TutorsList.propTypes = {
